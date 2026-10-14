@@ -1,4 +1,4 @@
-name = "annals_rademacher_enflo_type"
+name = "annals_equiangular_lines_fixed_angle"
 testDriver = "workspace_test"
 defaultTargets = ["Challenge", "Solution", "Submission"]
 

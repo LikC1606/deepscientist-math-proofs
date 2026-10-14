@@ -1,0 +1,35 @@
+{
+  "problem_id": "annals_rademacher_enflo_type",
+  "statement_revision": 1,
+  "declared_model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+  "benchmark_commit": "96a09300f9debeef864d8037635d6e0248c43960",
+  "source_proof_commit": "f58e1aca3241c2174583c4e51e92d34fb287628a",
+  "local_evaluation": {
+    "status": "evaluated_passed",
+    "kernel_verified": true,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "official_comparator": "official_verified"
+  },
+  "production": {
+    "mode": "continuation from previously kernel-checked helper proofs",
+    "reasoning_effort": "xhigh",
+    "roles": [
+      "Lead",
+      "Researcher",
+      "Researcher",
+      "Engineer"
+    ],
+    "turns_in_final_continuation": 30,
+    "elapsed_minutes_in_final_continuation": 249.9,
+    "human_direction": "Task selection, runtime and environment fixes, library-access policy, and continuation setup directed by a human user through a coding assistant."
+  },
+  "source_sha256": {
+    "lakefile.toml": "42cca2d8df61e708f738befd9546f5f9d1f7d20660aadbf88372bbaf38b1ac4e",
+    "Submission.lean": "ad93f9761455b4e52fba817c002cb8a662296d99444ff27ec05d632ba7872357",
+    "Submission/Helpers.lean": "b5b5c31e59632f5c10241037df5e8d8d3f4ba346d99917caffd60932c7dae226"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "theorem-os.leaneval.submission-evidence.v1",
+  "problem_id": "annals_fractional_expectation_thresholds",
+  "statement_revision": 1,
+  "declared_model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+  "benchmark_commit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+  "candidate_commit": "06dd44031d8ef14eacd8bdc9f8a666998ece052d",
+  "run_id": "dd952d3a-fde1-4e77-9c96-7cefd7f56438",
+  "turns": 239,
+  "source_digest": "968789d0fb0ef79f396fdda622f47c31a83a76957bdfc00ddb25c93e63a8f4fe",
+  "review": {
+    "status": "accepted",
+    "worker": "researcher-1",
+    "commit": "06dd44031d8ef14eacd8bdc9f8a666998ece052d",
+    "source_digest": "968789d0fb0ef79f396fdda622f47c31a83a76957bdfc00ddb25c93e63a8f4fe"
+  },
+  "local_official_comparator": {
+    "status": "official_verified",
+    "command": "lake test",
+    "exitCode": 0,
+    "durationMs": 541019,
+    "checkedAt": 1792080169829,
+    "officialBaselineCommit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+    "officialManifestHash": "2fce08190503c2ed98478a3d994116b004f756eb03fa2130bd28a0c0a5589a7d",
+    "targetCommit": "261f6f8f863e166747fb04029d80854c689afd7c",
+    "stdoutSha256": "ae6ba260ac6cb88e9870538022a79c3aec9db4ae680d9d33effc465969e7181c",
+    "stderrSha256": "bfde5cc5dfc70318af6bcbeace59ba041e574ce6a482121952c6eac0f43ede2f"
+  },
+  "kernel_acceptance": [
+    "nanoda",
+    "Lean default kernel"
+  ],
+  "files": {
+    "Submission.lean": {
+      "sha256": "028ce084c75d9015852e6912d05ebf50f40d05522b47267e52c3365c7f19d56e",
+      "bytes": 1735
+    },
+    "Submission/Helpers.lean": {
+      "sha256": "e0ea3f43432ed60c497193a8bb900ca71bdbb4a16e0c256a6d1bac0b4f273fad",
+      "bytes": 89669
+    },
+    "lakefile.toml": {
+      "sha256": "0331a667b991e555c474fbd05905e89f1402f826b70d851319e6ab60edea3c4a",
+      "bytes": 663
+    },
+    "lean-toolchain": {
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "bytes": 29
+    }
+  }
+}

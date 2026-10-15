@@ -1,0 +1,61 @@
+[
+  {
+    "problem_id": "annals_unit_conjecture",
+    "statement_revision": 1,
+    "directory": "annals_unit_conjecture",
+    "model": "DeepScientist + GPT-5.6",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/1246",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/1246#issuecomment-5380977645",
+    "result_reported_at": "2026-08-22T14:44:59Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_unit_conjecture\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_unit_conjecture`: pass",
+    "original_source_url": "https://gist.github.com/LikC1606/7570e284ff8b474a4139db2092de6eec/1062b1e6c3d5bda6ae4a218e41bd34dbf11a2c35",
+    "original_source_commit": "1062b1e6c3d5bda6ae4a218e41bd34dbf11a2c35",
+    "source_sha256": {
+      "Submission.lean": "5b0740de41cc47385273cb26195b3c7f08e50fa349edfa36489731b6ba10f062",
+      "lakefile.toml": "27369d856ec9815ed11b8aac39b1ae99b080c41da610edc559a6490c23c5f9b1"
+    }
+  },
+  {
+    "problem_id": "annals_rademacher_enflo_type",
+    "statement_revision": 1,
+    "directory": "annals_rademacher_enflo_type",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2115",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2115#issuecomment-6161355838",
+    "result_reported_at": "2026-10-14T05:07:39Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_rademacher_enflo_type\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_rademacher_enflo_type`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/0c40463f2714beea03c5e8416ba9e7c62aa6aa50",
+    "original_source_commit": "0c40463f2714beea03c5e8416ba9e7c62aa6aa50",
+    "source_sha256": {
+      "README.md": "7d742c9565136e3a1558aaba102f54c889aa6102d7c94d36b52535a02797dd3c",
+      "Submission.lean": "ad93f9761455b4e52fba817c002cb8a662296d99444ff27ec05d632ba7872357",
+      "Submission/Helpers.lean": "b5b5c31e59632f5c10241037df5e8d8d3f4ba346d99917caffd60932c7dae226",
+      "lakefile.toml": "42cca2d8df61e708f738befd9546f5f9d1f7d20660aadbf88372bbaf38b1ac4e",
+      "verification.json": "9c28ee8f06c5acda0e23131693ce25b865f0d9b11f1e437503c29b19a34296a0"
+    }
+  },
+  {
+    "problem_id": "annals_equiangular_lines_fixed_angle",
+    "statement_revision": 1,
+    "directory": "annals_equiangular_lines_fixed_angle",
+    "model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+    "status": "official_accepted",
+    "submission_url": "https://github.com/leanprover/lean-eval-submissions/issues/2135",
+    "result_url": "https://github.com/leanprover/lean-eval-submissions/issues/2135#issuecomment-6186332699",
+    "result_reported_at": "2026-10-15T06:53:59Z",
+    "result_body": "## Submission result\n\n✅ Newly-solved problems: annals_equiangular_lines_fixed_angle\n\nAttempted 1 / 1; succeeded on 1.\n\n### Per-problem\n- `annals_equiangular_lines_fixed_angle`: pass",
+    "original_source_url": "https://github.com/LikC1606/deepscientist-math-proofs/tree/1a46c11651e8346a13af410ae3e12292da694d81",
+    "original_source_commit": "1a46c11651e8346a13af410ae3e12292da694d81",
+    "source_sha256": {
+      "README.md": "01a11641e2a5f0f18f15bdd1e7fcb6501ead04b93a5cdcb02fe09a63d96cedc1",
+      "Submission.lean": "33bb5ef9ab4ba497af6218874580c54791358516812cd52b187e2091946903f1",
+      "Submission/Helpers.lean": "2b0ee3d08d6293710ee2348a00f8bd72e702332e7e05af0af61a434c6476e57f",
+      "compatibility-verification.json": "52bc09f6f7f67925d6c1daad37001d89cf3dc1a317da2bf33e64d47e8926f948",
+      "lakefile.toml": "830b8ff82d0016b22f868cc9a9b9b3301bb01d710212926188ee6558c2560468",
+      "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+      "verification.json": "b2c9c38d29712f16603aea5a2bee87be26fae1b6124fe5abf6ce98c138b0b04a"
+    }
+  }
+]

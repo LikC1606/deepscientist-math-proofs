@@ -1,0 +1,44 @@
+{
+  "problem_id": "annals_equiangular_lines_fixed_angle",
+  "statement_revision": 1,
+  "declared_model": "DeepScientist Math + GPT-6.1 (gpt-6.1-sol)",
+  "benchmark_commit": "96a09300f9debeef864d8037635d6e0248c43960",
+  "source_proof_commit": "9a4ab8b1d8388cb757ea11842c4368bdf719b7cc",
+  "runtime_source_commit": "484a4e72a76bbd2119f4f7cfeb98c81189125049",
+  "local_evaluation": {
+    "status": "evaluated_passed",
+    "kernel_verified": true,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "official_comparator": "official_verified",
+    "official_comparator_exit_code": 0,
+    "kernel_receipt": "lean-70004c39bb2c79cce334a96c",
+    "lean_statement_hash": "c024c69275472a04b5842afc10e9115d4e0d05c1c1495cd7b76d3e4ce68fd711",
+    "source_digest": "be09dbb39d4d4a05623e969b4fa85a301a711fd730f25ed10ed43519e5be7d7a",
+    "independent_review": "accepted"
+  },
+  "production": {
+    "mode": "independent review and evaluation of a saved cooperative proof candidate",
+    "fresh_from_zero": false,
+    "reasoning_effort": "xhigh",
+    "roles": [
+      "Lead",
+      "Researcher",
+      "Researcher",
+      "Engineer"
+    ],
+    "turns_in_final_continuation": 1,
+    "turns_in_immediately_preceding_run": 40,
+    "earlier_attempts_additional": true,
+    "solve_wall_ms_in_final_continuation": 1113554,
+    "human_direction": "Task selection and runtime/environment repairs requested by a human user. A coding assistant recovered the saved candidate, corrected public-statement parsing, removed unrelated unfinished helpers from the checked projection, and arranged independent review and final evaluation."
+  },
+  "source_sha256": {
+    "lakefile.toml": "9f66817aff41c4616bc8234b2535499dcca9c07e719931e5b986e0acc2cd41c1",
+    "Submission.lean": "0f86c2a1d51458c5b77c2f5f777e94ea12c75c2c34080e3fb2f22700475d54c9",
+    "Submission/Helpers.lean": "cf8ff997cc43e8854c16a7a040f2beb28e3949ae9c5ecfc783c09a529bcfa0df"
+  }
+}

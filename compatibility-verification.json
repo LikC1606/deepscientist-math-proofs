@@ -1,0 +1,53 @@
+{
+  "problem_id": "annals_equiangular_lines_fixed_angle",
+  "statement_revision": 1,
+  "date": "2026-10-15",
+  "parent_submission_commit": "c037d8e66532a24986fc81deb3ee092e9d0a5754",
+  "previous_official_submission": "https://github.com/leanprover/lean-eval-submissions/issues/2133",
+  "historical_verification": "verification.json",
+  "benchmark_commit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+  "lean_commit": "470d5ce1400764999581fd26d5d72b00d990b0f4",
+  "mathlib_commit": "5e0c4e5239cb0a2d86d68a884bf52cfd963fce22",
+  "lean_pool_commit": "e9d53e9cbcff8dfd0cc816ba94db7a26b082929f",
+  "production": {
+    "mode": "coding-assistant compatibility port of an existing cooperative proof",
+    "fresh_from_zero": false,
+    "assistant_changes": [
+      "Use spectralRadius_eq_of_unital for spectrum-based spectral-radius arguments.",
+      "Adapt dotProduct_mulVec_zero_iff to its implicit vector argument.",
+      "Remove two congr tactics after goals already closed by convert.",
+      "Pin the official Lean, Mathlib, and lean-pool versions."
+    ]
+  },
+  "validation_at_publication": {
+    "direct_compilation": {
+      "exit_code": 0,
+      "modules": ["ChallengeDeps", "Submission.Helpers", "Submission", "Solution"],
+      "options": ["-DautoImplicit=false", "-o <module>.olean"],
+      "note": "The official benchmark bridge was copied unchanged and compiled; it was not read as a solution source."
+    },
+    "target_axiom_check": "running",
+    "official_lake_test": "running",
+    "official_ci": "not_yet_submitted",
+    "note": "Compilation passed; this snapshot does not claim comparator or independent-kernel acceptance. Subsequent official results are tracked by the submission issue."
+  },
+  "official_verifier_pins": {
+    "lean4export": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "nanoda": "68d5ca9db226849b41a6fff59d796ff19d0a8840",
+    "landrun": "5ed4a3db3a4ad930d577215c6b9abaa19df7f99f"
+  },
+  "source_sha256": {
+    "Submission.lean": "33bb5ef9ab4ba497af6218874580c54791358516812cd52b187e2091946903f1",
+    "Submission/Helpers.lean": "2b0ee3d08d6293710ee2348a00f8bd72e702332e7e05af0af61a434c6476e57f",
+    "lakefile.toml": "830b8ff82d0016b22f868cc9a9b9b3301bb01d710212926188ee6558c2560468",
+    "lean-toolchain": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+  },
+  "direct_compilation_log_sha256": {
+    "ChallengeDeps": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Submission.Helpers": "34aff853c73cc7065a3ba313fe3eea38f7658c2b0b0818a0ee51ce9a1acb01c0",
+    "Submission": "5f3933ab638f9d2965c8d22170491d8379ca7c5e31aa1603a9e77ba723ecbecc",
+    "Solution": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

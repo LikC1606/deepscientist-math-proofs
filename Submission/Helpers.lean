@@ -22,8 +22,7 @@ theorem upper_spectralRadius_reindex
     spectralRadius ℝ (Matrix.reindex e e A) = spectralRadius ℝ A := by
   have hs := AlgEquiv.spectrum_eq (Matrix.reindexAlgEquiv ℝ ℝ e) A
   change spectrum ℝ (Matrix.reindex e e A) = spectrum ℝ A at hs
-  unfold spectralRadius
-  rw [hs]
+  simp only [spectralRadius_eq_of_unital, hs]
 theorem upper_eigenspace_finrank_reindex
     {ι κ : Type*} [Fintype ι] [Fintype κ]
     (e : ι ≃ κ) (A : Matrix ι ι ℝ) (lambda : ℝ) :
@@ -680,7 +679,7 @@ theorem real_matrix_eigen_of_rayleigh_eq
   have hz : dotProduct (star p) ((μ • (1 : Matrix ι ι ℝ) - A).mulVec p) = 0 := by
     simp only [star_trivial, Matrix.sub_mulVec, Matrix.smul_mulVec,
       Matrix.one_mulVec, dotProduct_sub, dotProduct_smul, smul_eq_mul, hp, sub_self]
-  have he := (hB.dotProduct_mulVec_zero_iff p).mp hz
+  have he := hB.dotProduct_mulVec_zero_iff.mp hz
   simpa only [Matrix.sub_mulVec, Matrix.smul_mulVec, Matrix.one_mulVec,
     sub_eq_zero, eq_comm] using he
 theorem real_matrix_quadratic_le_abs
@@ -2039,7 +2038,7 @@ theorem perron_spectralRadius_eq {n : ℕ} (G : SimpleGraph (Fin n))
     simpa only [Matrix.toEuclideanLin, Matrix.spectrum_toLpLin] using
       (Module.End.hasEigenvalue_of_hasEigenvector hpv).mem_spectrum
   apply le_antisymm
-  · rw [spectralRadius]
+  · rw [spectralRadius_eq_of_unital]
     refine iSup₂_le fun t ht => ?_
     change t ∈ spectrum ℝ A at ht
     rw [hA.spectrum_real_eq_range_eigenvalues] at ht
@@ -2056,7 +2055,7 @@ theorem perron_spectralRadius_eq {n : ℕ} (G : SimpleGraph (Fin n))
           ENNReal.ofReal rho = ENNReal.ofReal ‖rho‖ := by rw [Real.norm_of_nonneg hrho]
           _ = (↑‖rho‖₊ : ENNReal) := (ENNReal.coe_nnreal_eq ‖rho‖₊).symm
       _ ≤ spectralRadius ℝ A := by
-        unfold spectralRadius
+        rw [spectralRadius_eq_of_unital]
         exact le_iSup_of_le rho (le_iSup_of_le hmem le_rfl)
 theorem connected_perron_frobenius :
     ∀ (n : ℕ) (G : SimpleGraph (Fin n)), G.Connected →
@@ -2154,7 +2153,7 @@ theorem component_spectralRadius_eq {ι : Type*} [Fintype ι] [DecidableEq ι] (
     simpa only [Matrix.toEuclideanLin, Matrix.spectrum_toLpLin] using
       (Module.End.hasEigenvalue_of_hasEigenvector hpv).mem_spectrum
   apply le_antisymm
-  · rw [spectralRadius]
+  · rw [spectralRadius_eq_of_unital]
     refine iSup₂_le fun t ht => ?_
     change t ∈ spectrum ℝ A at ht
     rw [hA.spectrum_real_eq_range_eigenvalues] at ht
@@ -2171,7 +2170,7 @@ theorem component_spectralRadius_eq {ι : Type*} [Fintype ι] [DecidableEq ι] (
           ENNReal.ofReal rho = ENNReal.ofReal ‖rho‖ := by rw [Real.norm_of_nonneg hrho]
           _ = (↑‖rho‖₊ : ENNReal) := (ENNReal.coe_nnreal_eq ‖rho‖₊).symm
       _ ≤ spectralRadius ℝ A := by
-        unfold spectralRadius
+        rw [spectralRadius_eq_of_unital]
         exact le_iSup_of_le rho (le_iSup_of_le hmem le_rfl)
 theorem component_connected_perron
     {ι : Type*} [Fintype ι] [DecidableEq ι]
@@ -2373,7 +2372,7 @@ theorem component_rank_one_kernel
       simpa only [star_trivial] using hQ.dotProduct_mulVec_nonneg x
     have hs : ∑ i, x i = 0 := by nlinarith [sq_nonneg (∑ i, x i)]
     refine ⟨?_, hs⟩
-    apply (hQ.dotProduct_mulVec_zero_iff x).mp
+    apply hQ.dotProduct_mulVec_zero_iff.mp
     simp only [star_trivial]
     nlinarith [hs]
   · rintro ⟨hx, hs⟩
@@ -2632,7 +2631,6 @@ theorem component_accounting_of_perron_data
           dsimp only [m]
           convert (congrArg (fun S : Submodule ℝ (C.supp → ℝ) => Module.finrank ℝ S) hz).trans
             (finrank_bot ℝ (C.supp → ℝ)) using 1
-          congr 4
       calc
         _ = ∑ C, if rho C = lambda then 1 else 0 := Finset.sum_congr rfl (fun C _ => hC C)
         _ = t := by simp only [t, Finset.card_eq_sum_ones, Finset.sum_filter]
@@ -2677,7 +2675,6 @@ theorem component_accounting_of_perron_data
           (D.toSimpleGraph.adjMatrix ℝ) (rho D) lambda (hless D hDC) (hb D)
         convert (congrArg (fun S : Submodule ℝ (D.supp → ℝ) => Module.finrank ℝ S) hz).trans
           (finrank_bot ℝ (D.supp → ℝ)) using 1
-        congr 4
       · simp
     refine ⟨C, hC, hless, hdim, ?_⟩
     have hr := component_rank_one_general_bound (G.adjMatrix ℝ) lambda

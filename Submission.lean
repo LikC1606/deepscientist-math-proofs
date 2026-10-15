@@ -126,8 +126,7 @@ theorem upper_spectralRadius_relabel {ι κ : Type*} [Fintype ι] [Fintype κ]
     spectralRadius ℝ (A.submatrix e e) = spectralRadius ℝ A := by
   have hs : spectrum ℝ (A.submatrix e e) = spectrum ℝ A :=
     AlgEquiv.spectrum_eq (Matrix.reindexAlgEquiv ℝ ℝ e.symm) A
-  unfold spectralRadius
-  rw [hs]
+  simp only [spectralRadius_eq_of_unital, hs]
 theorem upper_spectral_order_le {ι : Type*} [Fintype ι] [DecidableEq ι]
     (G : SimpleGraph ι) [DecidableRel G.Adj] (lambda : ℝ)
     (hG : spectralRadius ℝ (G.adjMatrix ℝ) = ENNReal.ofReal lambda) :
@@ -776,7 +775,7 @@ theorem lower_perron_spectralRadius_eq {n : ℕ} (G : SimpleGraph (Fin n))
     simpa only [Matrix.toEuclideanLin, Matrix.spectrum_toLpLin] using
       (Module.End.hasEigenvalue_of_hasEigenvector hpv).mem_spectrum
   apply le_antisymm
-  · rw [spectralRadius]
+  · rw [spectralRadius_eq_of_unital]
     refine iSup₂_le fun t ht => ?_
     change t ∈ spectrum ℝ A at ht
     rw [hA.spectrum_real_eq_range_eigenvalues] at ht
@@ -793,7 +792,7 @@ theorem lower_perron_spectralRadius_eq {n : ℕ} (G : SimpleGraph (Fin n))
           ENNReal.ofReal rho = ENNReal.ofReal ‖rho‖ := by rw [Real.norm_of_nonneg hrho]
           _ = (↑‖rho‖₊ : ENNReal) := (ENNReal.coe_nnreal_eq ‖rho‖₊).symm
       _ ≤ spectralRadius ℝ A := by
-        unfold spectralRadius
+        rw [spectralRadius_eq_of_unital]
         exact le_iSup_of_le rho (le_iSup_of_le hmem le_rfl)
 theorem lower_graph_order_ge_two (lambda : ℝ) (hlambda : 0 < lambda)
     (n : ℕ) (G : SimpleGraph (Fin n)) [DecidableRel G.Adj]

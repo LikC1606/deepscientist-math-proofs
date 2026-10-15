@@ -1,0 +1,250 @@
+{
+  "schema": "lean-eval.problem-snapshot.v1",
+  "problemId": "dimitrov",
+  "runId": "145b477c-2f3c-43e2-94d1-f0de28bc6015",
+  "capturedAt": "2026-10-15T18:47:51.367819+00:00",
+  "status": "in_progress_not_officially_accepted",
+  "phase": "checking",
+  "turns": 46,
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh",
+  "projectRelative": "generated/dimitrov",
+  "originalBaseCommit": "a51bb0297e2be00c029ef88f7c3ecfa82025f5a9",
+  "taskStatuses": {
+    "pending": 4,
+    "integrated": 27,
+    "completed": 4,
+    "blocked": 1
+  },
+  "workers": [
+    {
+      "id": "solver",
+      "role": "lead",
+      "phase": "running",
+      "turns": 2,
+      "taskId": null,
+      "sourceHeadBefore": "82e9f235ece2720481d2fd9f48a14fe20adb0953",
+      "sourceHeadAfter": "82e9f235ece2720481d2fd9f48a14fe20adb0953",
+      "fileCount": 8
+    },
+    {
+      "id": "researcher-1",
+      "role": "researcher",
+      "phase": "finished",
+      "turns": 43,
+      "taskId": "uniform_radial_truncated_energy",
+      "sourceHeadBefore": "abf6d4d54660390724cfb804b3ce9dfa059d443b",
+      "sourceHeadAfter": "abf6d4d54660390724cfb804b3ce9dfa059d443b",
+      "fileCount": 8
+    },
+    {
+      "id": "researcher-2",
+      "role": "researcher",
+      "phase": "checking",
+      "turns": 1,
+      "taskId": "help_f9e206b7fe0e41e49174596683c59e8c",
+      "sourceHeadBefore": "96a07630e0a8b1d2506b4cf6a0f4c8a972966483",
+      "sourceHeadAfter": "96a07630e0a8b1d2506b4cf6a0f4c8a972966483",
+      "fileCount": 9
+    },
+    {
+      "id": "engineer",
+      "role": "engineer",
+      "phase": "finished",
+      "turns": 0,
+      "taskId": null,
+      "sourceHeadBefore": "3cc42e3196dd6edb08fc3fb270ba71fe93f03a83",
+      "sourceHeadAfter": "3cc42e3196dd6edb08fc3fb270ba71fe93f03a83",
+      "fileCount": 8
+    }
+  ],
+  "files": [
+    {
+      "file": "history.fast-export.gz",
+      "bytes": 5222325,
+      "sha256": "fb18606105452a5a4c69d625a55a29675c7f9d6705bf5dd0740d7d686de1442a"
+    },
+    {
+      "file": "state.json",
+      "bytes": 1567224,
+      "sha256": "b46c6d6179328ff464f467c64126c41964689bf1a1003ecbf2e5cd97599c8877"
+    },
+    {
+      "file": "task-continuation.md",
+      "bytes": 1138,
+      "sha256": "ee03a7070499c25a313f6bf59ac9a4946bfaba71e978f36fe1cb2d6cb6c4cf9b"
+    },
+    {
+      "file": "task.md",
+      "bytes": 648,
+      "sha256": "d198b1a31af06358b0d9351962077b2aca6e1e81adfe18250d1914838b840279"
+    },
+    {
+      "file": "workers/engineer/COOPERATION.json",
+      "bytes": 84916,
+      "sha256": "4cb09859c5d93c56e97c6cbf2931130731c22740e004288d8a6909d49886e958"
+    },
+    {
+      "file": "workers/engineer/RESEARCH.md",
+      "bytes": 2631,
+      "sha256": "9df4db2265f4b4cb9f71e7e757c5598066d2604a53f05a75633c9e97ce09083d"
+    },
+    {
+      "file": "workers/engineer/generated/dimitrov/Challenge.lean",
+      "bytes": 419,
+      "sha256": "64aa424b18a8145864b7960cba2bea31c4167005b444895712498986a64e185d"
+    },
+    {
+      "file": "workers/engineer/generated/dimitrov/Submission/Helpers.lean",
+      "bytes": 59843,
+      "sha256": "94e85a7a91fa73a248d289fa676555e546dac554e7ddcda10afb34d141e06e4b"
+    },
+    {
+      "file": "workers/engineer/generated/dimitrov/Submission.lean",
+      "bytes": 483,
+      "sha256": "4ccc782999c50bb2bfb202882f675c6c2dc34fa54fbe1609796c781e9177b84e"
+    },
+    {
+      "file": "workers/engineer/generated/dimitrov/lake-manifest.json",
+      "bytes": 3048,
+      "sha256": "919746fc0138bfca9891d55f2f7d38848913af761dd2a10c58194f7113e13bfc"
+    },
+    {
+      "file": "workers/engineer/generated/dimitrov/lakefile.toml",
+      "bytes": 441,
+      "sha256": "f03ae57e39aa1aff483c41423ab237cd5a7accf7b10a9d5381c8c006aad17138"
+    },
+    {
+      "file": "workers/engineer/generated/dimitrov/lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "file": "workers/researcher-1/COOPERATION.json",
+      "bytes": 87581,
+      "sha256": "84b092d0c6548eced65fdbf96a597fb0adf58c169f14876c48d21092b3af0450"
+    },
+    {
+      "file": "workers/researcher-1/RESEARCH.md",
+      "bytes": 5382,
+      "sha256": "17b17a978e0f3440a50af25179ef9d7918dd45746af5c2688bb74c5dca81f3fa"
+    },
+    {
+      "file": "workers/researcher-1/generated/dimitrov/Challenge.lean",
+      "bytes": 419,
+      "sha256": "64aa424b18a8145864b7960cba2bea31c4167005b444895712498986a64e185d"
+    },
+    {
+      "file": "workers/researcher-1/generated/dimitrov/Submission/Helpers.lean",
+      "bytes": 199881,
+      "sha256": "852207658cacf6fc8bcc62599d606727e20f228853a14ea828a3a6e6c2ec6cd4"
+    },
+    {
+      "file": "workers/researcher-1/generated/dimitrov/Submission.lean",
+      "bytes": 483,
+      "sha256": "4ccc782999c50bb2bfb202882f675c6c2dc34fa54fbe1609796c781e9177b84e"
+    },
+    {
+      "file": "workers/researcher-1/generated/dimitrov/lake-manifest.json",
+      "bytes": 3048,
+      "sha256": "919746fc0138bfca9891d55f2f7d38848913af761dd2a10c58194f7113e13bfc"
+    },
+    {
+      "file": "workers/researcher-1/generated/dimitrov/lakefile.toml",
+      "bytes": 441,
+      "sha256": "f03ae57e39aa1aff483c41423ab237cd5a7accf7b10a9d5381c8c006aad17138"
+    },
+    {
+      "file": "workers/researcher-1/generated/dimitrov/lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "file": "workers/researcher-2/COOPERATION.json",
+      "bytes": 92006,
+      "sha256": "0666eefe0460e47f45d1874dedb08894230a57a5d053152d4f2174a6d1012c25"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-25d38d656b5545d7d2b005cb477a8250fba1f2274ac43496f4f046bee9dbdd94.jsonl",
+      "bytes": 662,
+      "sha256": "7235c017243600eecd562420250b34cd31014452076436e8763f536d07daf445"
+    },
+    {
+      "file": "workers/researcher-2/RESEARCH.md",
+      "bytes": 2593,
+      "sha256": "929641e7cffad347b762665484fa718f50e6cff9e1c52bc9bce40374858bb57e"
+    },
+    {
+      "file": "workers/researcher-2/generated/dimitrov/Challenge.lean",
+      "bytes": 419,
+      "sha256": "64aa424b18a8145864b7960cba2bea31c4167005b444895712498986a64e185d"
+    },
+    {
+      "file": "workers/researcher-2/generated/dimitrov/Submission/Helpers.lean",
+      "bytes": 188066,
+      "sha256": "70fe5882f4b41086aa4ad07b7a19b28a75300b9d0cafae08834e3e4b0d51e178"
+    },
+    {
+      "file": "workers/researcher-2/generated/dimitrov/Submission.lean",
+      "bytes": 483,
+      "sha256": "4ccc782999c50bb2bfb202882f675c6c2dc34fa54fbe1609796c781e9177b84e"
+    },
+    {
+      "file": "workers/researcher-2/generated/dimitrov/lake-manifest.json",
+      "bytes": 3048,
+      "sha256": "919746fc0138bfca9891d55f2f7d38848913af761dd2a10c58194f7113e13bfc"
+    },
+    {
+      "file": "workers/researcher-2/generated/dimitrov/lakefile.toml",
+      "bytes": 441,
+      "sha256": "f03ae57e39aa1aff483c41423ab237cd5a7accf7b10a9d5381c8c006aad17138"
+    },
+    {
+      "file": "workers/researcher-2/generated/dimitrov/lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "file": "workers/solver/COOPERATION.json",
+      "bytes": 92006,
+      "sha256": "0666eefe0460e47f45d1874dedb08894230a57a5d053152d4f2174a6d1012c25"
+    },
+    {
+      "file": "workers/solver/RESEARCH.md",
+      "bytes": 116639,
+      "sha256": "e2de7cf408c8497a1115a492d6b0c0f2a726059ce535dbb0329dba38e9e6605c"
+    },
+    {
+      "file": "workers/solver/generated/dimitrov/Challenge.lean",
+      "bytes": 419,
+      "sha256": "64aa424b18a8145864b7960cba2bea31c4167005b444895712498986a64e185d"
+    },
+    {
+      "file": "workers/solver/generated/dimitrov/Submission/Helpers.lean",
+      "bytes": 193711,
+      "sha256": "88bfcf9316d408bc26bbc394b88d9d652f1ab224cc2dd5d2f8a51601328d2811"
+    },
+    {
+      "file": "workers/solver/generated/dimitrov/Submission.lean",
+      "bytes": 483,
+      "sha256": "4ccc782999c50bb2bfb202882f675c6c2dc34fa54fbe1609796c781e9177b84e"
+    },
+    {
+      "file": "workers/solver/generated/dimitrov/lake-manifest.json",
+      "bytes": 3048,
+      "sha256": "919746fc0138bfca9891d55f2f7d38848913af761dd2a10c58194f7113e13bfc"
+    },
+    {
+      "file": "workers/solver/generated/dimitrov/lakefile.toml",
+      "bytes": 441,
+      "sha256": "f03ae57e39aa1aff483c41423ab237cd5a7accf7b10a9d5381c8c006aad17138"
+    },
+    {
+      "file": "workers/solver/generated/dimitrov/lean-toolchain",
+      "bytes": 25,
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    }
+  ],
+  "consistency": "Files were captured individually while solving continued; state and worktrees may reflect nearby instants.",
+  "history": "Filtered git fast-export with original-oid metadata; imported commits receive new IDs."
+}

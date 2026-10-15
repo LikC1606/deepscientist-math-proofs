@@ -1,0 +1,3 @@
+Solve the frozen Lean-Eval V1 problem hopf_rinow from its original public Submission template.
+Prove every target in the active problem contract, using compiler feedback and allowed local Mathlib declarations. Preserve the exact original statements, definitions, and protected files. Start with fresh proof and model state; do not access benchmark Solution.lean, previous submissions, previous run proofs, or external answer repositories.
+Use the cooperative roles to find a concise proof and verify every helper before integration. Final success requires all original goals to pass kernel checking and independent official local evaluation.

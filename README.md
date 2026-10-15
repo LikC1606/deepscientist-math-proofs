@@ -15,3 +15,5 @@ The unit conjecture package is the historical GPT-5.6 submission from its accept
 Original `verification.json` and `compatibility-verification.json` files retain their publication-time snapshots. Subsequent official acceptance is recorded by the result comments linked in `accepted.json`.
 
 To reproduce a result, use the official generated LeanEval workspace and toolchain corresponding to the original submission. Copy that problem's `Submission.lean` and `Submission/` directory, when present, into its generated workspace and run the official evaluator. Dependency pins are recorded in each package's `lakefile.toml`, `lean-toolchain` when present, and original submission record.
+
+Current work on Dimitrov, Hopf-Rinow, and Szemeredi is archived separately in [in-progress](in-progress/). These are unfinished research snapshots, not officially accepted proofs.

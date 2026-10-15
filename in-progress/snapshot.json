@@ -1,0 +1,38 @@
+{
+  "schema": "lean-eval.in-progress-snapshot.v1",
+  "captureStartedAt": "2026-10-15T18:47:47.647496+00:00",
+  "status": "in_progress_not_officially_accepted",
+  "problems": [
+    {
+      "problemId": "dimitrov",
+      "directory": "dimitrov",
+      "runId": "145b477c-2f3c-43e2-94d1-f0de28bc6015",
+      "phase": "checking",
+      "turns": 46,
+      "workers": 4,
+      "files": 37,
+      "bytes": 7934916
+    },
+    {
+      "problemId": "hopf_rinow",
+      "directory": "hopf_rinow",
+      "runId": "8f766249-1c8a-4395-be7b-31af08e2fa42",
+      "phase": "checking",
+      "turns": 269,
+      "workers": 4,
+      "files": 79,
+      "bytes": 3113506
+    },
+    {
+      "problemId": "szemeredi",
+      "directory": "szemeredi",
+      "runId": "29ee6fba-bc82-414b-9adf-63de9c0febd4",
+      "phase": "running",
+      "turns": 59,
+      "workers": 4,
+      "files": 60,
+      "bytes": 841024
+    }
+  ],
+  "captureFinishedAt": "2026-10-15T18:47:55.278958+00:00"
+}

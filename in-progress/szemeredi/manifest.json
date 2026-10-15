@@ -1,0 +1,364 @@
+{
+  "schema": "lean-eval.problem-snapshot.v1",
+  "problemId": "szemeredi",
+  "runId": "29ee6fba-bc82-414b-9adf-63de9c0febd4",
+  "capturedAt": "2026-10-15T18:47:55.276997+00:00",
+  "status": "in_progress_not_officially_accepted",
+  "phase": "running",
+  "turns": 59,
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh",
+  "projectRelative": "generated/szemeredi",
+  "originalBaseCommit": "20010b4e4c689566d8a83826074f6bdbc6509284",
+  "taskStatuses": {
+    "pending": 1,
+    "blocked": 4,
+    "completed": 9
+  },
+  "workers": [
+    {
+      "id": "solver",
+      "role": "lead",
+      "phase": "running",
+      "turns": 34,
+      "taskId": null,
+      "sourceHeadBefore": "fbc8247efcae07e6ee16019641f51d17c32314ab",
+      "sourceHeadAfter": "fbc8247efcae07e6ee16019641f51d17c32314ab",
+      "fileCount": 9
+    },
+    {
+      "id": "researcher-1",
+      "role": "researcher",
+      "phase": "checking",
+      "turns": 16,
+      "taskId": "graph_regularity_encoding",
+      "sourceHeadBefore": "a838d4f22e71fbb743b9e4b23222172717879eea",
+      "sourceHeadAfter": "a838d4f22e71fbb743b9e4b23222172717879eea",
+      "fileCount": 23
+    },
+    {
+      "id": "researcher-2",
+      "role": "researcher",
+      "phase": "finished",
+      "turns": 9,
+      "taskId": "ap3_conversion",
+      "sourceHeadBefore": "a307026a360d0c26f13852b4f6d6d2fba69c6aa3",
+      "sourceHeadAfter": "a307026a360d0c26f13852b4f6d6d2fba69c6aa3",
+      "fileCount": 16
+    },
+    {
+      "id": "engineer",
+      "role": "engineer",
+      "phase": "finished",
+      "turns": 0,
+      "taskId": null,
+      "sourceHeadBefore": "20010b4e4c689566d8a83826074f6bdbc6509284",
+      "sourceHeadAfter": "20010b4e4c689566d8a83826074f6bdbc6509284",
+      "fileCount": 9
+    }
+  ],
+  "files": [
+    {
+      "file": "history.fast-export.gz",
+      "bytes": 150012,
+      "sha256": "b6bb3d3a7916ecbf424c37781cb11f560c621141fd8050a2787c535ab57903a7"
+    },
+    {
+      "file": "state.json",
+      "bytes": 390715,
+      "sha256": "676f153293e7e0e99300837550c8f4d8a6154d8e4491009bfc9668c1bcbc1f00"
+    },
+    {
+      "file": "task.md",
+      "bytes": 641,
+      "sha256": "3c94ecd0fddd1055a9cafc892f40f09006cf2a1653bafa9a8df7f05d9baadc11"
+    },
+    {
+      "file": "workers/engineer/COOPERATION.json",
+      "bytes": 4351,
+      "sha256": "d57cfbec2a4c36b48b35696cbdc25dfc0405ff5a782b196431b71468aaaee41e"
+    },
+    {
+      "file": "workers/engineer/RESEARCH.md",
+      "bytes": 2131,
+      "sha256": "e8ecb1b86a84ee4fe018efb7f53cbd63b043af98fd48dfea4a644f65dee0fc26"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/Challenge.lean",
+      "bytes": 176,
+      "sha256": "de186e07ba9c4d04a23e2c68cc5084d4ff00c68219a1bff6c97a69118c7caf7c"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/ChallengeDeps.lean",
+      "bytes": 1301,
+      "sha256": "d9f4297185d64fd9cf434ff25fee382a87fdf50dc4ab7e70fca36c6131f11a6a"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/Submission/Helpers.lean",
+      "bytes": 53,
+      "sha256": "b5b5c31e59632f5c10241037df5e8d8d3f4ba346d99917caffd60932c7dae226"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/Submission.lean",
+      "bytes": 240,
+      "sha256": "a58ba31ce98c8b8dbb7ebdc9a7a076e40ea83d994b72c5b517c76eeafe6d252a"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/lake-manifest.json",
+      "bytes": 3620,
+      "sha256": "48dfd903625a10da7d77716360ea458b82d000d3efa993a4842b67eccb0af069"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/lakefile.toml",
+      "bytes": 632,
+      "sha256": "9c69a42d2361755f14578b45f1e35e1bc98b5710d33f3dd218d3a10893602650"
+    },
+    {
+      "file": "workers/engineer/generated/szemeredi/lean-toolchain",
+      "bytes": 29,
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    },
+    {
+      "file": "workers/researcher-1/COOPERATION.json",
+      "bytes": 43422,
+      "sha256": "3fee15c3da01f5d995f899ecf38be2827eaad07834c5bbd5fca3742866912400"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-06e322c748a0c9c2fc6dabc068871bfee8e1cdb3f9af3bd4f34265015f6a9981.jsonl",
+      "bytes": 800,
+      "sha256": "c041e4876447faee008d2ddd38f04e741759ef2237c2517da30eeac0a674bfa1"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-27f3b485b7e3a04698e8b90a377c05c521a2c029528c33f5a945f65459fee040.jsonl",
+      "bytes": 774,
+      "sha256": "de82daf35bc4999a33bb85c3fbe6baf64e168ef3a350db5c86db9cc3926b6c28"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-40a144b48bbe2c121f53452ef765d91d7bf5837efb89731bc74731481d73883a.jsonl",
+      "bytes": 509,
+      "sha256": "ad02b050da91fb86e3f94ff68075c943cd4dcb01577777002d6fc679b9f069bb"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-a255d01b5bc51ef2c907792fa395ad09a417c1b27a268f7c62ecaefab3e580f2.jsonl",
+      "bytes": 931,
+      "sha256": "6435102535245a6ab56d8ac89778244a77dbc2531b9ee7c6fa37881d74764251"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-a8ac9a32821e06fcbfd725f5b1d2578937bea29771751563f4b0b4b2d7d7479e.jsonl",
+      "bytes": 1042,
+      "sha256": "079fc7cb233fdfe0143e31776e46fca039ddb55666d0dcf0425b76b1064649ee"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-aa227d690124e8f1c3ad3042409753c300341bde52ba705092d2222b8ee53534.jsonl",
+      "bytes": 1124,
+      "sha256": "51a4d7c96b4f8eea7e47dca1dcf92d40311d4a168f07ab48690ddeaa60e7c5dc"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-be0bc49f6dc8b652b8a00caf0cce724e9eed7203358310b1dcb84034b01274e3.jsonl",
+      "bytes": 593,
+      "sha256": "7b2e5149bda70ea53feae6ce96960df4c46ee52577cd4bd0d108157a0ede611f"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-c06c5a32fd77b7a17978b57ee43e1a24ea24618535c88274918bf9d4a02621cd.jsonl",
+      "bytes": 1460,
+      "sha256": "c1cbc47957cea71d80f049383c4d8914cdbd367839c1eedcd06c829df95a1a8a"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-c2bd8a4ec6dc36e255715c9f4abbe989f32e34611aaaa9db4fae13d43d4880ed.jsonl",
+      "bytes": 807,
+      "sha256": "8ca9b34e48b6b19719b59681cdd89b93258a5c0cb436cae2be39a64f118e6ac7"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-c3b8ab87cbba60bded7f63a9abcbc24df9873f3a1a7076429e96f2a70f05b179.jsonl",
+      "bytes": 755,
+      "sha256": "00e9737b2c1523c17ece0b1435f50fd1e2f91788cb63aeac2d85cfee809bff7b"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-ca85618fe04b3d7253bf359eb7c52e33d1b372ddebd03055cf877014931e2a74.jsonl",
+      "bytes": 521,
+      "sha256": "8fa5d10e35f3dddb35d269de4b811974fe71658a94a2ab3407a1de5bda78779a"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-e5dc56dfaaa69c8051917202adce64d9566fb06d839ce738ed2790dc7c0ec7a2.jsonl",
+      "bytes": 786,
+      "sha256": "2cb61632e7679b63c4d1e6f7c2194e7d252de9d9613320e8d333e8381d0d195f"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-f51d083891cafff392c28d0d1768b066fab901767d0e9dc64f970dca6dd48d26.jsonl",
+      "bytes": 803,
+      "sha256": "ef467eac6e2ed8d9d78170c81cbf78f75d29ea919f09ef987970eaed754a28e5"
+    },
+    {
+      "file": "workers/researcher-1/DELIVERIES-f6e16a53e5d0b31cd9b634871d6b77d6bf7ae50274ed1fe839020e76868ae15a.jsonl",
+      "bytes": 918,
+      "sha256": "3ecdbad18ce4e2b389df085ad14d5f86f62bc19c89d332159e44e8800fbfab7f"
+    },
+    {
+      "file": "workers/researcher-1/RESEARCH.md",
+      "bytes": 12224,
+      "sha256": "cdd611bf5c70d95b60304b8b9830e7a7d14410f0bdb0783ca9fc40f4b32eadfc"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/Challenge.lean",
+      "bytes": 176,
+      "sha256": "de186e07ba9c4d04a23e2c68cc5084d4ff00c68219a1bff6c97a69118c7caf7c"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/ChallengeDeps.lean",
+      "bytes": 1301,
+      "sha256": "d9f4297185d64fd9cf434ff25fee382a87fdf50dc4ab7e70fca36c6131f11a6a"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/Submission/Helpers.lean",
+      "bytes": 995,
+      "sha256": "45fde151a4f377ac3cbb35e63966bffa9ceb321e1919e30c23fcccb19b78ee82"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/Submission.lean",
+      "bytes": 240,
+      "sha256": "a58ba31ce98c8b8dbb7ebdc9a7a076e40ea83d994b72c5b517c76eeafe6d252a"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/lake-manifest.json",
+      "bytes": 3620,
+      "sha256": "48dfd903625a10da7d77716360ea458b82d000d3efa993a4842b67eccb0af069"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/lakefile.toml",
+      "bytes": 632,
+      "sha256": "9c69a42d2361755f14578b45f1e35e1bc98b5710d33f3dd218d3a10893602650"
+    },
+    {
+      "file": "workers/researcher-1/generated/szemeredi/lean-toolchain",
+      "bytes": 29,
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    },
+    {
+      "file": "workers/researcher-2/COOPERATION.json",
+      "bytes": 63804,
+      "sha256": "d99fe615c86fd9c33ddb8c8826f7f92aefe58946c43cee36ae5ebaee67bf6950"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-1dc78386f6df201fc5abbc28bbf8b7820c998af22d77d13e9a4222881f382640.jsonl",
+      "bytes": 662,
+      "sha256": "9e89a4c622f593ea1ea1b6af8357c9e776f804484b67ace10dae2adad3461464"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-30a2e7892f8bc89c890fabe9d259a51aebd93bab418bd544570f87853ce38185.jsonl",
+      "bytes": 814,
+      "sha256": "9578e8f17551888642a2b65c9b44885de3f5d41b760ef95b0a3f5fa9cb806335"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-372807bec4db2d75deed96f0b924ee164f63bd0289c5326ad8ef101e9b4e9d71.jsonl",
+      "bytes": 903,
+      "sha256": "239e2f4c8da6857323d4abeda137ddb6494d7de135a673454c6eb6975f2f5eb3"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-5546991d3cf1d239007f82ea4c6388cd3d3e775aaf5990a3455a6791acc36cbd.jsonl",
+      "bytes": 811,
+      "sha256": "752e4c7a3338a964b0dcd46fd10c5f951808f5366b7fe9de3f159f2554f120bb"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-beb97dce562fb47f7a6527bba6434c61a775eebaca46298f0da1a28dbf14935b.jsonl",
+      "bytes": 1081,
+      "sha256": "8f5cdb4a7d4929a9fa2ea775997f84258b69d602952d467ef3bc5e73f7aa2361"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-dea7c6e12827392397c08e561b258ae74fba0c974565e1d67e6820fe4a22edb5.jsonl",
+      "bytes": 1571,
+      "sha256": "40284ba35371ac04589a3b9611f6b4cdec072ef062e47ff6df1374767b0b7ab3"
+    },
+    {
+      "file": "workers/researcher-2/DELIVERIES-e82d7eaea66fe190560a7a3009ac62b0cba4b5d4221b9e80c6609e9396c30291.jsonl",
+      "bytes": 607,
+      "sha256": "c8ec40fbc97f87e441a90017fec3b3a81bf937e6942fae9410946c41f0b3800a"
+    },
+    {
+      "file": "workers/researcher-2/RESEARCH.md",
+      "bytes": 2378,
+      "sha256": "168104399d762e120b4bd1b6b6e41d97a097e0ebbdfe9a48d44f99c1194f4eac"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/Challenge.lean",
+      "bytes": 176,
+      "sha256": "de186e07ba9c4d04a23e2c68cc5084d4ff00c68219a1bff6c97a69118c7caf7c"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/ChallengeDeps.lean",
+      "bytes": 1301,
+      "sha256": "d9f4297185d64fd9cf434ff25fee382a87fdf50dc4ab7e70fca36c6131f11a6a"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/Submission/Helpers.lean",
+      "bytes": 997,
+      "sha256": "9d6a7fde2eeb44d6bf974aca67c0807010fba4b11d1a7ab1a058f3a2af89f33d"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/Submission.lean",
+      "bytes": 2451,
+      "sha256": "e24e98c14c65b2e7877b0223505b6b7891ab7219bc915701f0cc00f51c56c520"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/lake-manifest.json",
+      "bytes": 3620,
+      "sha256": "48dfd903625a10da7d77716360ea458b82d000d3efa993a4842b67eccb0af069"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/lakefile.toml",
+      "bytes": 632,
+      "sha256": "9c69a42d2361755f14578b45f1e35e1bc98b5710d33f3dd218d3a10893602650"
+    },
+    {
+      "file": "workers/researcher-2/generated/szemeredi/lean-toolchain",
+      "bytes": 29,
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    },
+    {
+      "file": "workers/solver/COOPERATION.json",
+      "bytes": 47925,
+      "sha256": "7648d2faee3e0d4832ca01597e7d4606477f4c970cdd5899c4b0ae311ba6abf0"
+    },
+    {
+      "file": "workers/solver/RESEARCH.md",
+      "bytes": 10051,
+      "sha256": "d8dbfcb66a38c673a7cb8c97b36ed57196975787fb65b8ebbdb1e7119a7c7d85"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/Challenge.lean",
+      "bytes": 176,
+      "sha256": "de186e07ba9c4d04a23e2c68cc5084d4ff00c68219a1bff6c97a69118c7caf7c"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/ChallengeDeps.lean",
+      "bytes": 1301,
+      "sha256": "d9f4297185d64fd9cf434ff25fee382a87fdf50dc4ab7e70fca36c6131f11a6a"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/Submission/Helpers.lean",
+      "bytes": 54367,
+      "sha256": "dbb1af63ef56f21a7e9e5ba5543a20c060d4220f95e24db54e8fbf3d8f3c9bd9"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/Submission.lean",
+      "bytes": 12723,
+      "sha256": "7cd1ea26c35efe9b5ba4ad554154a115b12cd5b0124e42b23492c624dfafa2e7"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/lake-manifest.json",
+      "bytes": 3620,
+      "sha256": "48dfd903625a10da7d77716360ea458b82d000d3efa993a4842b67eccb0af069"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/lakefile.toml",
+      "bytes": 632,
+      "sha256": "9c69a42d2361755f14578b45f1e35e1bc98b5710d33f3dd218d3a10893602650"
+    },
+    {
+      "file": "workers/solver/generated/szemeredi/lean-toolchain",
+      "bytes": 29,
+      "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47"
+    }
+  ],
+  "consistency": "Files were captured individually while solving continued; state and worktrees may reflect nearby instants.",
+  "history": "Filtered git fast-export with original-oid metadata; imported commits receive new IDs."
+}

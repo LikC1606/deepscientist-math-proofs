@@ -1,0 +1,75 @@
+{
+  "schema": "theoremos.lean-eval-submission-provenance.v1",
+  "preparedAt": "2026-10-16T11:09:07.683503+00:00",
+  "evidenceScope": "Local official comparator acceptance of the identical proof bytes; hosted submission CI is independent.",
+  "problem": {
+    "problemId": "hopf_rinow",
+    "statementRevision": 1,
+    "runId": "f6ceee9d-ee89-477a-bf40-91bc3fbb0da1",
+    "solverCommit": "54aef14c8bf34ccce36c9a0918be9a39a8bfd1dc",
+    "reviewedSourceDigest": "d6c4133112482ce44be7f9ad32ee8cdf85f57cd4a901885c2b6811a8c9a68aad",
+    "files": {
+      "Submission.lean": {
+        "sha256": "168812f88c0fa82777a53cb700e391f6deab564ad2b210900c7573e72d0c365a",
+        "bytes": 182299
+      },
+      "Submission/Helpers.lean": {
+        "sha256": "f62e16b14fff319f20788b03d94cf9de1262dcfa0cc6462b539faa5435573c40",
+        "bytes": 227115
+      },
+      "lakefile.toml": {
+        "sha256": "f8d06e68d8482247f0d18cad71c175fdcb03ca1a68a30a055bca2bde8485bdb2",
+        "bytes": 633
+      },
+      "lean-toolchain": {
+        "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+        "bytes": 29
+      },
+      "lake-manifest.json": {
+        "sha256": "c2ffad9c26904466069938f1f6c908f6a3202256c234a0328436724b4666f262",
+        "bytes": 3621
+      }
+    },
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "xhigh",
+    "continuationRoleTurns": 16,
+    "localOfficialReceipt": {
+      "attestation": {
+        "algorithm": "hmac-sha256",
+        "keyId": "4e07fb1722094345",
+        "value": "1c068a9c2a72955fee8cf79fe21eac659790452c8df92cf8d0a0d748ee6c1897"
+      },
+      "benchmarkAdapterId": "lean-eval",
+      "benchmarkAdapterVersion": "1",
+      "checkedAt": 1792147755074,
+      "claim": "statement",
+      "command": "lake test",
+      "durationMs": 384188,
+      "exitCode": 0,
+      "leanStatementHash": "c24c00ca1282a8c286f28c13cda153f2ba29e3437362fc31a8967fbfff563e15",
+      "localGateReceiptId": "lean-af9944288927a53786246b90",
+      "officialBaselineCommit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestHash": "86a6fe27b7ceb563d6a7952f6dd82648919c39f3ed28fc26f6aa733b316d2b66",
+      "officialManifestId": "lean-eval:hopf_rinow:r1:38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestPath": ".deepscientist/math/official-manifest.json",
+      "officialRepositoryUrl": "https://github.com/leanprover/lean-eval",
+      "problemId": "hopf_rinow",
+      "proofHash": "168812f88c0fa82777a53cb700e391f6deab564ad2b210900c7573e72d0c365a",
+      "receiptId": "official-27c7700c026006db16d251ef",
+      "sourceDeclarationHash": "252ef01a00126697dcdced0b4fb9241e656fa19c87b2a4859ba1d501c1a5b87b",
+      "statementHash": "5221f19dc55d50c7368bed88d14cbabea835886cf2a50e1935e6c3d7c33c1261",
+      "status": "official_verified",
+      "stderrSha256": "826da23c2d1c7448831b0c17a9ef016034036a499c4c35f9a372b70f272216c3",
+      "stdoutSha256": "080e17d621ad8d9fea2e03d58f148f00a9cc1d0e875216d4f6033951b26182b6",
+      "targetCommit": "3bd9d7f70a27f84744a6457893e92e14effb6a5c",
+      "theoremDeclarationHash": "0278e07c5d729f67d8d0e3e1c679c619f2f2a14f45280bc8bc2d9a56c45d445c",
+      "theoremName": "Submission.hopf_rinow",
+      "timedOut": false,
+      "verifier": "official-comparator"
+    },
+    "localEvidenceValidation": {
+      "signatureValid": true,
+      "solverStateUnchanged": true
+    }
+  }
+}

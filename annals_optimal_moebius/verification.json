@@ -1,0 +1,84 @@
+{
+  "schema": "theoremos.lean-eval-submission-provenance.v1",
+  "preparedAt": "2026-10-16T17:57:54.400Z",
+  "evidenceScope": "Local official comparator acceptance of identical proof bytes; hosted submission CI is independent.",
+  "problem": {
+    "problemId": "annals_optimal_moebius",
+    "statementRevision": 1,
+    "runId": "df436601-2f0a-463f-a153-c30c134d6472",
+    "solverCommit": "b48eebc842a49f114c97ac439f3aa3991858284b",
+    "officialProjectionCommit": "5bc9fa372c974cc78a83abede3914757cb9e690b",
+    "reviewedSourceDigest": "65f9bc5313bd74ded495d8a82b4fffc43d5d24febdeabc1b2022ef390b623f71",
+    "files": {
+      "Submission.lean": {
+        "sha256": "30d6bf220146a5372fa539059d7539460a7e10a601d84f7e9c9bc4f61518ee08",
+        "bytes": 519
+      },
+      "Submission/Helpers.lean": {
+        "sha256": "f8098c97268ab82c80c703882c3a20304eb1345f67f34a394ed6646b4f1c7d4b",
+        "bytes": 180229
+      },
+      "lakefile.toml": {
+        "sha256": "77e265cac894be153ed904484a81e6ed120caeb1babcde8f8d73d4275f0fe5db",
+        "bytes": 645
+      },
+      "lean-toolchain": {
+        "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+        "bytes": 29
+      },
+      "lake-manifest.json": {
+        "sha256": "f971d97fc46d3b4433c44addab2bee03abe8b5c40a809b9d1a799d2543deca3f",
+        "bytes": 3633
+      }
+    },
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "xhigh",
+    "continuationRoleTurns": 38,
+    "independentReview": {
+      "status": "accepted",
+      "commit": "b48eebc842a49f114c97ac439f3aa3991858284b",
+      "sourceDigest": "65f9bc5313bd74ded495d8a82b4fffc43d5d24febdeabc1b2022ef390b623f71",
+      "workerId": "researcher-1"
+    },
+    "localOfficialReceipt": {
+      "attestation": {
+        "algorithm": "hmac-sha256",
+        "keyId": "13d0ea7c8f2b3b57",
+        "value": "baf5ab5d1f9bd289dfacaff154b43ea7f49cdfffabbff44454997897654accb0"
+      },
+      "benchmarkAdapterId": "lean-eval",
+      "benchmarkAdapterVersion": "1",
+      "checkedAt": 1792163840432,
+      "claim": "statement",
+      "command": "lake test",
+      "durationMs": 118355,
+      "exitCode": 0,
+      "leanStatementHash": "edde82f65ef6a6a37a6aca86899be50c68d77e396a666721c20fe990dd85603f",
+      "localGateReceiptId": "lean-8220f06465a7528cc57718e0",
+      "officialBaselineCommit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestHash": "776c836ac2595d70fc8bf66481f13469995a761dcdb6cb36ee62f5ab9944f46e",
+      "officialManifestId": "lean-eval:annals_optimal_moebius:r1:38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestPath": ".deepscientist/math/official-manifest.json",
+      "officialRepositoryUrl": "https://github.com/leanprover/lean-eval",
+      "problemId": "annals_optimal_moebius",
+      "proofHash": "30d6bf220146a5372fa539059d7539460a7e10a601d84f7e9c9bc4f61518ee08",
+      "receiptId": "official-56aa819a8ed10d397631a424",
+      "sourceDeclarationHash": "af9805f46689c190b00b59e0fa893491d0deeeebdf352fa4603108e515c931df",
+      "statementHash": "bc74ba10a416ac09d3829ea431c93bb48469abe5feb26e1e20acda2ba43f3502",
+      "status": "official_verified",
+      "stderrSha256": "61d01c10dad76ca594e8ceda53d2b3bf7581fcd96938a06f45b951ba4bbf12bb",
+      "stdoutSha256": "dc3c324a5be27df797858c45c1a16168e5028e8fefbc2dd59cf25565afa1b4b6",
+      "targetCommit": "5bc9fa372c974cc78a83abede3914757cb9e690b",
+      "theoremDeclarationHash": "d4f6c290e53b42b9f15dedfdf034d810d089ca682456110c75376a2ffac53c14",
+      "theoremName": "Submission.theorem_1_1",
+      "timedOut": false,
+      "verifier": "official-comparator"
+    },
+    "localEvidenceValidation": {
+      "signatureValid": true,
+      "solverStateUnchanged": true,
+      "solverAndOfficialProjectionBytesIdentical": true,
+      "frozenDependencyFilesIdentical": true
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "theoremos.lean-eval-submission-provenance.v1",
+  "preparedAt": "2026-10-16T17:57:54.400Z",
+  "evidenceScope": "Local official comparator acceptance of identical proof bytes; hosted submission CI is independent.",
+  "problem": {
+    "problemId": "annals_improved_bounds_sunflower_lemma",
+    "statementRevision": 1,
+    "runId": "4b9e99ae-daa8-4992-b34c-78e7d1030fe2",
+    "solverCommit": "89d3b2ae1046b769c61bec916b7b2e514bb3b51f",
+    "officialProjectionCommit": "119c1f08760133b8b354354de04d59b5079a80f0",
+    "reviewedSourceDigest": "a36ec2baaf018f8a05b810300b7033615d882c046075e076f17420024ca81d5e",
+    "files": {
+      "Submission.lean": {
+        "sha256": "5452139451a7e52fdc601cc3908dad70bc30ee7980fc686c1adc44cb39679a87",
+        "bytes": 1558
+      },
+      "Submission/Helpers.lean": {
+        "sha256": "9059e07d4ef5973c4a44e2eb54a47baf9355d93c2004bce141516e655e805b42",
+        "bytes": 74066
+      },
+      "lakefile.toml": {
+        "sha256": "1fee9d4b6d9bd19ad63f7bc2f3fd2ccbeef4decde6fa7248e1263be82716282c",
+        "bytes": 661
+      },
+      "lean-toolchain": {
+        "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+        "bytes": 29
+      },
+      "lake-manifest.json": {
+        "sha256": "513c4898907308fd863f9dc04df3c389f1bca00ad68387d9ea62b521e1b20122",
+        "bytes": 3649
+      }
+    },
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "xhigh",
+    "continuationRoleTurns": 1,
+    "independentReview": {
+      "status": "accepted",
+      "commit": "89d3b2ae1046b769c61bec916b7b2e514bb3b51f",
+      "sourceDigest": "a36ec2baaf018f8a05b810300b7033615d882c046075e076f17420024ca81d5e",
+      "workerId": "researcher-1"
+    },
+    "localOfficialReceipt": {
+      "attestation": {
+        "algorithm": "hmac-sha256",
+        "keyId": "13d0ea7c8f2b3b57",
+        "value": "b6e09c91d4c75ddef312f378179734ceec33b40753c3f6342e42468fd3ad4ab2"
+      },
+      "benchmarkAdapterId": "lean-eval",
+      "benchmarkAdapterVersion": "1",
+      "checkedAt": 1792170919387,
+      "claim": "statement",
+      "command": "lake test",
+      "durationMs": 34433,
+      "exitCode": 0,
+      "leanStatementHash": "6971dfebf3167567ac7fc31ec06870f2e9f069a073853465e6c371472f4acb4b",
+      "localGateReceiptId": "lean-303e82f97d157db177398d01",
+      "officialBaselineCommit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestHash": "06711ab5af5e302743f9811cc651b4b66ea363810e3b1467e2181a8ab0e7964a",
+      "officialManifestId": "lean-eval:annals_improved_bounds_sunflower_lemma:r1:38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestPath": ".deepscientist/math/official-manifest.json",
+      "officialRepositoryUrl": "https://github.com/leanprover/lean-eval",
+      "problemId": "annals_improved_bounds_sunflower_lemma",
+      "proofHash": "5452139451a7e52fdc601cc3908dad70bc30ee7980fc686c1adc44cb39679a87",
+      "receiptId": "official-5d529fee4ce52fcbdd7b9f5e",
+      "sourceDeclarationHash": "40166d1a489049e30031a521cbea7d27a3e64aab9c879a21fac65553dbf3934a",
+      "statementHash": "0160882ad637a6f56cb851f79cd7fbbd72f8b6d159e438b349c5428053e62fee",
+      "status": "official_verified",
+      "stderrSha256": "eef3f016bd67635596f46c673a48ad5591d54c34aefc828ee6a01f62ce4d8d3a",
+      "stdoutSha256": "64878445eefb89939cb9623a9409e5b50588fda612569ba87484e0a31e8fa3c2",
+      "targetCommit": "119c1f08760133b8b354354de04d59b5079a80f0",
+      "theoremDeclarationHash": "af5670e867f23a1465735ad15f9f085ba4ee9e19f39f4c053340271d3b4755c7",
+      "theoremName": "Submission.ImprovedBoundsSunflowerLemma.theorem_1_4",
+      "timedOut": false,
+      "verifier": "official-comparator"
+    },
+    "localEvidenceValidation": {
+      "signatureValid": true,
+      "solverStateUnchanged": true,
+      "solverAndOfficialProjectionBytesIdentical": true,
+      "frozenDependencyFilesIdentical": true
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "theoremos.lean-eval-submission-provenance.v1",
+  "preparedAt": "2026-10-16T17:57:54.400Z",
+  "evidenceScope": "Local official comparator acceptance of identical proof bytes; hosted submission CI is independent.",
+  "problem": {
+    "problemId": "annals_lorentzian_polynomials",
+    "statementRevision": 1,
+    "runId": "57036a7c-6265-45d1-92f2-48292b59ae0b",
+    "solverCommit": "dc082e99532a292b8d7cfd800f9830db8651e696",
+    "officialProjectionCommit": "914723bf876270767777aa9ab87941af6869f523",
+    "reviewedSourceDigest": "7d2d31b46454f12431309b8c0e7f6836069d62dcb45b3cf7a56f5867b138829e",
+    "files": {
+      "Submission.lean": {
+        "sha256": "cf17603393c2c1ae5e480f51a81204a90e5f8d0d0ee56b6638684b8a844042c4",
+        "bytes": 403
+      },
+      "Submission/Helpers.lean": {
+        "sha256": "7c9eb18fb990b2a6c20fb05a040fe1a9ddf53426b534e881308110b79647210e",
+        "bytes": 187868
+      },
+      "lakefile.toml": {
+        "sha256": "f2cdafc232195ab0b9a32b62a7dbc5b04075051915f97268e266f5816a640a53",
+        "bytes": 652
+      },
+      "lean-toolchain": {
+        "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+        "bytes": 29
+      },
+      "lake-manifest.json": {
+        "sha256": "137781601d4246b23b38ef4e77de1ff93f678bd4d3b4eef54fee002e269fabee",
+        "bytes": 3640
+      }
+    },
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "xhigh",
+    "continuationRoleTurns": 32,
+    "independentReview": {
+      "status": "accepted",
+      "commit": "dc082e99532a292b8d7cfd800f9830db8651e696",
+      "sourceDigest": "7d2d31b46454f12431309b8c0e7f6836069d62dcb45b3cf7a56f5867b138829e",
+      "workerId": "researcher-1"
+    },
+    "localOfficialReceipt": {
+      "attestation": {
+        "algorithm": "hmac-sha256",
+        "keyId": "13d0ea7c8f2b3b57",
+        "value": "9331d765c0e41a428b97d6f0caf4560667ffcc8453598a0256de333a74f88aa6"
+      },
+      "benchmarkAdapterId": "lean-eval",
+      "benchmarkAdapterVersion": "1",
+      "checkedAt": 1792171135195,
+      "claim": "statement",
+      "command": "lake test",
+      "durationMs": 72727,
+      "exitCode": 0,
+      "leanStatementHash": "a6872964a94852522dec644bbb7d1e54a5352c1522b9fd859f33a4afca69ce1f",
+      "localGateReceiptId": "lean-5ae347e945299639a9c40aa0",
+      "officialBaselineCommit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestHash": "4a8be01e4e9af83d9545f56c66a9e43c2ae96b4241623b409e5f6a4717a95c66",
+      "officialManifestId": "lean-eval:annals_lorentzian_polynomials:r1:38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestPath": ".deepscientist/math/official-manifest.json",
+      "officialRepositoryUrl": "https://github.com/leanprover/lean-eval",
+      "problemId": "annals_lorentzian_polynomials",
+      "proofHash": "cf17603393c2c1ae5e480f51a81204a90e5f8d0d0ee56b6638684b8a844042c4",
+      "receiptId": "official-77ec6166e2084c56f0db5506",
+      "sourceDeclarationHash": "e25a8fa567c6ec45cd61c233772eb96267cdc6eeb89f4e850b77f75bd660a782",
+      "statementHash": "46df40f2ad7aac8af5da6e4624b84174970d5ebe04ead76e4cb66ae52bb7593b",
+      "status": "official_verified",
+      "stderrSha256": "e2536316ecb9aef6c7172f3d1ac146a91c303204f7276de16daa85289763b4a6",
+      "stdoutSha256": "125a12404371cbf929800df9cb10ca2a4e5bf45bc54eca0174163b21f1b7233f",
+      "targetCommit": "914723bf876270767777aa9ab87941af6869f523",
+      "theoremDeclarationHash": "1d814e4b5d0e9de74258d7bb2579c930fe34c11ffd348949b0b1784b99c939d1",
+      "theoremName": "Submission.theorem_2_25",
+      "timedOut": false,
+      "verifier": "official-comparator"
+    },
+    "localEvidenceValidation": {
+      "signatureValid": true,
+      "solverStateUnchanged": true,
+      "solverAndOfficialProjectionBytesIdentical": true,
+      "frozenDependencyFilesIdentical": true
+    }
+  }
+}

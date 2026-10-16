@@ -1,0 +1,84 @@
+{
+  "schema": "theoremos.lean-eval-submission-provenance.v1",
+  "preparedAt": "2026-10-16T17:57:54.400Z",
+  "evidenceScope": "Local official comparator acceptance of identical proof bytes; hosted submission CI is independent.",
+  "problem": {
+    "problemId": "annals_algebraic_integers",
+    "statementRevision": 1,
+    "runId": "48a9dc1f-65bd-423b-9910-3e8ed3de5bf4",
+    "solverCommit": "431e8fb70db64d14b8d510a4f1e759ff5be3dada",
+    "officialProjectionCommit": "a93a90c134a6c348db4d019cfd71ea58315e4a71",
+    "reviewedSourceDigest": "ec405d0136e55b5763168e875099a5f434c6bf9bac152d50895f70ce7dbd4165",
+    "files": {
+      "Submission.lean": {
+        "sha256": "252c353bed16717cf3f61686a79d116af5453b050a6a43126cefc73d24644127",
+        "bytes": 417
+      },
+      "Submission/Helpers.lean": {
+        "sha256": "ce61d989c70a72ddf22b65b8c795f21b65b65a939b883a6b11acb8d48404e5a7",
+        "bytes": 212350
+      },
+      "lakefile.toml": {
+        "sha256": "fc118359bdb58b65c54e5d64d997bb11b06148359d22868a415510c87bfcd786",
+        "bytes": 648
+      },
+      "lean-toolchain": {
+        "sha256": "bc84812c94489d1e3e191baa1dc10d5eb684382d7fe9d2a5ab085e72c1c67e47",
+        "bytes": 29
+      },
+      "lake-manifest.json": {
+        "sha256": "bd437daa81debd08a537910b20cfd393a309529dd7e5a3d9f4bf28fcad0d6697",
+        "bytes": 3636
+      }
+    },
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "xhigh",
+    "continuationRoleTurns": 64,
+    "independentReview": {
+      "status": "accepted",
+      "commit": "431e8fb70db64d14b8d510a4f1e759ff5be3dada",
+      "sourceDigest": "ec405d0136e55b5763168e875099a5f434c6bf9bac152d50895f70ce7dbd4165",
+      "workerId": "researcher-1"
+    },
+    "localOfficialReceipt": {
+      "attestation": {
+        "algorithm": "hmac-sha256",
+        "keyId": "13d0ea7c8f2b3b57",
+        "value": "4e9af2f9e996d4a4fdaf6797c9a2bb1d6f16e720eda89953c2656e3498307f1f"
+      },
+      "benchmarkAdapterId": "lean-eval",
+      "benchmarkAdapterVersion": "1",
+      "checkedAt": 1792173165934,
+      "claim": "statement",
+      "command": "lake test",
+      "durationMs": 103860,
+      "exitCode": 0,
+      "leanStatementHash": "264d3313b39e5e9b81a5a8ab0dcba287080737948c3c74c05ed7948be1031749",
+      "localGateReceiptId": "lean-cf718637c0361fbbfff27798",
+      "officialBaselineCommit": "38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestHash": "1f4e8fa965f1c5ef608a9c6644d23aa7ee1cadad52a853f4bb5807c6ff787945",
+      "officialManifestId": "lean-eval:annals_algebraic_integers:r1:38361be884302c7edce1908c4aef8296eb2cb27e",
+      "officialManifestPath": ".deepscientist/math/official-manifest.json",
+      "officialRepositoryUrl": "https://github.com/leanprover/lean-eval",
+      "problemId": "annals_algebraic_integers",
+      "proofHash": "252c353bed16717cf3f61686a79d116af5453b050a6a43126cefc73d24644127",
+      "receiptId": "official-3958121e2cdc96e06fd66bf1",
+      "sourceDeclarationHash": "957470a9c57caed1891806b4edf1c911c22282afa3ec8e8c239b379e353006dd",
+      "statementHash": "66d1e2bca8de7747738c31eb14389cb977acfaaafe3059ddc58507321b94bac7",
+      "status": "official_verified",
+      "stderrSha256": "23615af85d83edabdd7e35904d9bbda0708edcd3f3b343946f3390b8f7130115",
+      "stdoutSha256": "bd24d440749630299ec2b9f6b63f3271889fd212690437865c4404fcebf8dd7e",
+      "targetCommit": "a93a90c134a6c348db4d019cfd71ea58315e4a71",
+      "theoremDeclarationHash": "40f2a73842a811842825d794e05df683709584a75b577077646413dfd30b9f9b",
+      "theoremName": "Submission.theorem_1_1",
+      "timedOut": false,
+      "verifier": "official-comparator"
+    },
+    "localEvidenceValidation": {
+      "signatureValid": true,
+      "solverStateUnchanged": true,
+      "solverAndOfficialProjectionBytesIdentical": true,
+      "frozenDependencyFilesIdentical": true
+    }
+  }
+}

@@ -1,6 +1,16 @@
+<!-- README_SYNC: source=f529520b40c4d8805ce1a27330e6e03256d3fad0; updated=2026-11-18 -->
+
+English · [简体中文](README_CN.md)
+
 # Accepted LeanEval V1 Proofs
 
-This repository collects three proofs accepted by the official LeanEval evaluator. Each problem directory preserves the complete original submission package byte for byte.
+Three Lean proof packages accepted by the official LeanEval V1 evaluator, with the published result and pinned source for each submission. Start with the result comment to establish acceptance, then open the archived package to inspect the proof and its provenance.
+
+[![GitHub Stars](https://img.shields.io/github/stars/LikC1606/deepscientist-math-proofs)](https://github.com/LikC1606/deepscientist-math-proofs/stargazers)
+
+Star the archive to find the accepted packages again.
+
+## Accepted submissions
 
 | Problem | Proof Directory | Declared Model | Official Acceptance |
 | --- | --- | --- | --- |
@@ -8,12 +18,21 @@ This repository collects three proofs accepted by the official LeanEval evaluato
 | Rademacher type and Enflo type | [annals_rademacher_enflo_type](annals_rademacher_enflo_type/) | DeepScientist Math + GPT-6.1 | [#2115](https://github.com/leanprover/lean-eval-submissions/issues/2115#issuecomment-6161355838) |
 | Equiangular lines with a fixed angle | [annals_equiangular_lines_fixed_angle](annals_equiangular_lines_fixed_angle/) | DeepScientist Math + GPT-6.1 | [#2135](https://github.com/leanprover/lean-eval-submissions/issues/2135#issuecomment-6186332699) |
 
-[accepted.json](accepted.json) records the original submission URLs, pinned source commits, official acceptance comments, and SHA-256 hashes of the original archived files.
+The unit conjecture package comes from the accepted historical Gist revision. The other two packages record continuation runs, including reuse of helper proofs and, for equiangular lines, a Lean 4.35 compatibility repair. The original submission records and package notes explain those changes. The archived `verification.json` and `compatibility-verification.json` retain their original snapshots; official acceptance is recorded by the linked result comments.
 
-The unit conjecture package is the historical GPT-5.6 submission from its accepted Gist revision. The other packages are the accepted GPT-6.1 submissions; equiangular lines includes the Lean 4.35 compatibility repair. The linked submissions and original package documentation describe continuation runs, helper-proof reuse, and compatibility edits.
+## Check the archived files
 
-Original `verification.json` and `compatibility-verification.json` files retain their publication-time snapshots. Subsequent official acceptance is recorded by the result comments linked in `accepted.json`.
+[accepted.json](accepted.json) lists the original submission URLs, pinned source revisions, result comments, and SHA-256 digests. From the repository root, use `jq` and `sha256sum` to check the listed files:
 
-To reproduce a result, use the official generated LeanEval workspace and toolchain corresponding to the original submission. Copy that problem's `Submission.lean` and `Submission/` directory, when present, into its generated workspace and run the official evaluator. Dependency pins are recorded in each package's `lakefile.toml`, `lean-toolchain` when present, and original submission record.
+```bash
+jq -r '.[] | .directory as $dir | .source_sha256 | to_entries[] | "\(.value)  \($dir)/\(.key)"' accepted.json |
+  sha256sum --check
+```
 
-Current work on Dimitrov, Hopf-Rinow, and Szemeredi is archived separately in [in-progress](in-progress/). These are unfinished research snapshots, not officially accepted proofs.
+This checks file identity. To check a proof itself, use the official generated LeanEval workspace for the recorded submission. Match the dependencies in `lakefile.toml` and `lean-toolchain` where provided, copy `Submission.lean` and `Submission/` where present, then run that workspace's official evaluator. This archive does not bundle the trusted benchmark files.
+
+## Unfinished research
+
+[In-progress snapshots](in-progress/) preserve work on Dimitrov, Hopf–Rinow, and Szemerédi. They may include unverified drafts or `sorry`; none of these snapshots is an accepted submission.
+
+There is no repository-wide license file at the root. Check the terms of the original materials before reuse.
